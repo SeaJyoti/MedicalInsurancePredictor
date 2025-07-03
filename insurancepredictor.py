@@ -108,8 +108,22 @@ with st.sidebar:
 
     st.markdown("---")
 
+if nav_option == "About Us":
+    st.markdown("### 📘 About This Project")
+    st.markdown("""
+    This application is designed to **predict annual medical insurance premiums** based on an individual's demographic and health-related factors.
+
+    #### 🧠 Project Objective:
+    The goal is to analyze how various features — like **age**, **BMI**, **number of children**, **smoking status**, **gender**, and **region** — influence medical costs. These insights are then used to train a **multiple linear regression model** that predicts future medical expenses.
+
+
+    #### 🏥 Real-World Use:
+    This tool helps **insurance providers** estimate personalized premiums using data-driven predictions, enabling **fairer pricing** based on individual risk profiles.
+
+    ---
+    """)
 # --- Prediction Tab ---
-if nav_option == "Predict Premium":
+elif nav_option == "Predict Premium":
     st.info('Enter User Details', icon="🧾")
     with st.form("prediction_form"):
         c1, c2 = st.columns(2)
