@@ -1,6 +1,5 @@
-streamlit
-pandas
-numpy
-scikit-learn==1.5.1
-fpdf
-Pillow
+streamlit==1.37.1 # Use the specific version you tested with or latest stable
+scikit-learn==1.5.1 
+pandas==2.2.2     # REPLACE THIS WITH YOUR ACTUAL VERSION
+numpy==1.26.4     # REPLACE THIS WITH YOUR ACTUAL VERSION
+fpdf==1.7.2
